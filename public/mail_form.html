@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Mail Calculation Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+<form action = "/getrate" method = "GET">
+<h1> Enter your package information to receive your postage rate:</h1>
+<!--INPUT Weight-->
+<h2>Enter Item Weight in ounces:</h2>
+<input type="number" step=0.01 name="item_weight"><br>
+
+<!--Stamped Letters
+
+
+Metered letters
+
+
+Large envelopes
+
+
+First-Class Package Service-->
+
+<h2>Enter Mail Type:</h2>
+<select name = "mail_type">
+    <option value = "stamped_letter"> Stamped Letters </option>
+    <option value = "metered_letter"> Metered letters </option>
+    <option value = "large_envelope"> Large envelopes </option>
+    <option value = "first_class"> First-Class Package Service </option>
+</select>
+
+<input type = "submit">
+</form>
+
+
+    
+</body>
+</html>
